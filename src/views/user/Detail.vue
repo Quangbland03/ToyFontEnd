@@ -192,7 +192,7 @@ export default {
 
     fetchProduct(id) {
       axios
-        .get(`https://toytoytoy.onrender.com/detail/${id}`,{
+        .get(`https://kidtoy.onrender.com/detail/${id}`,{
         headers: {
           Authorization: "Bearer " + this.token, 
         },

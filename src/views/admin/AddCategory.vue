@@ -72,7 +72,7 @@ export default {
     addCategory() {
       // Use axios to send data to the server
       axios
-        .post("https://toytoytoy.onrender.com/categories/add", {
+        .post("https://kidtoy.onrender.com/categories/add", {
           name: this.categoryName,
           description: this.categoryDescription,
         })

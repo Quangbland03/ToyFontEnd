@@ -134,7 +134,7 @@ export default {
   mounted() {
     // Fetch categories data
     axios
-      .get("https://toytoytoy.onrender.com/categories")
+      .get("https://kidtoy.onrender.com/categories")
       .then((response) => {
         this.data = response.data;
       })
@@ -149,7 +149,7 @@ export default {
   methods: {
     fetchProduct(id) {
       axios
-        .get(`https://toytoytoy.onrender.com/detail/${id}`)
+        .get(`https://kidtoy.onrender.com/detail/${id}`)
         .then((response) => {
           this.product = response.data;
           console.log(this.product);
@@ -162,7 +162,7 @@ export default {
     editProduct() {
       const productId = this.$route.params.id;
       axios
-        .post(`https://toytoytoy.onrender.com/edit/${productId}`, this.product)
+        .post(`https://kidtoy.onrender.com/edit/${productId}`, this.product)
         .then((response) => {
           alert("Product edited successfully");
           this.$router.push({ name: "product" });

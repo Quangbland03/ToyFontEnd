@@ -135,7 +135,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://toytoytoy.onrender.com/categories")
+      .get("https://kidtoy.onrender.com/categories")
       .then((response) => {
         this.data = response.data;
       })
@@ -146,7 +146,7 @@ export default {
   methods: {
     addProduct() {
       axios
-        .post("https://toytoytoy.onrender.com/add", this.product)
+        .post("https://kidtoy.onrender.com/add", this.product)
         .then((response) => {
           alert("Product added successfully");
           this.$router.push({ name: "product" });

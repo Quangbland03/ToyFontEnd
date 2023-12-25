@@ -1,12 +1,7 @@
 <template>
   <div class="header">
     <div class="flex items-center my-2 justify-end mr-4 text-sm font-bold">
-      <router-link
-        class="bg-red-500 p-2 mx-4 text-white px-4 hover:bg-red-700"
   
-        to="/admin"
-        >Amin</router-link
-      >
       <router-link
         class="flex items-center rounded-2xl p-2 justify-center"
         to="cart"

@@ -62,7 +62,7 @@ export default {
   mounted() {
     const id = this.$route.params.id; // Assuming you are using Vue Router to get the id from the route
     axios
-      .get(`https://toytoytoy.onrender.com/categories/detail/${id}`)
+      .get(`https://kidtoy.onrender.com/categories/detail/${id}`)
       .then((response) => {
         console.log(response.data);
         // Set data retrieved from the server to your component's data properties if needed
@@ -81,7 +81,7 @@ export default {
       const id = this.$route.params.id; // Assuming you are using Vue Router to get the id from the route
       // Use axios to send data to the server
       axios
-        .post(`https://toytoytoy.onrender.com/edit/${id}`, {
+        .post(`https://kidtoy.onrender.com/edit/${id}`, {
           name: this.categoryName,
           description: this.categoryDescription,
         })

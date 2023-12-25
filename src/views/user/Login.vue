@@ -98,7 +98,7 @@ export default {
 
       // Send a POST request to login the user
       axios
-        .post("https://toytoytoy.onrender.com/auth/login", userData)
+        .post("https://kidtoy.onrender.com/auth/login", userData)
         .then((response) => {
             console.log(response);
             Cookies.set('token', response.data.token, { expires: 1 });

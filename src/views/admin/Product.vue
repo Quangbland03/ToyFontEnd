@@ -139,7 +139,7 @@ export default {
   methods: {
     fetchPage(page) {
       axios
-        .get(`https://toytoytoy.onrender.com/products?page=${page}`, {
+        .get(`https://kidtoy.onrender.com/products?page=${page}`, {
         headers: {
           Authorization: "Bearer " + this.token, 
         },
@@ -168,7 +168,7 @@ export default {
     },
     deleteProduct(id) {
       axios
-        .get(`https://toytoytoy.onrender.com/delete/${id}`)
+        .get(`https://kidtoy.onrender.com/delete/${id}`)
         .then((response) => {
           const deletedProductRow = document.getElementById(`cate_${id}`);
           if (deletedProductRow) {

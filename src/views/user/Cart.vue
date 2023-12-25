@@ -133,7 +133,7 @@ export default {
         for (let item of cart) {
           totalPrice += item.price;
           const response = await axios.post(
-            "https://toytoytoy.onrender.com/orders/createOrder",
+            "https://kidtoy.onrender.com/orders/createOrder",
             { Item: item, OrderDate: orderDate, TotalPrice: totalPrice }
           );
           console.log("Order item added:", response.data);

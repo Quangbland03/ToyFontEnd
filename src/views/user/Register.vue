@@ -145,7 +145,7 @@ export default {
 
       // Gửi yêu cầu POST đăng ký người dùng
       axios
-        .post("https://toytoytoy.onrender.com/auth/register", userData)
+        .post("https://kidtoy.onrender.com/auth/register", userData)
         .then((response) => {
             this.$router.push({ name: 'login' });
           console.log(response);

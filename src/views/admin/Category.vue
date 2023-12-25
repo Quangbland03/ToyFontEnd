@@ -72,7 +72,7 @@ export default {
 
   mounted() {
     axios
-      .get("https://toytoytoy.onrender.com/categories")
+      .get("https://kidtoy.onrender.com/categories")
       .then((response) => {
         this.categories = response.data;
       })
@@ -91,7 +91,7 @@ export default {
     },
     deleteCategory(id) {
       axios
-        .get(`https://toytoytoy.onrender.com/categories/delete/${id}`)
+        .get(`https://kidtoy.onrender.com/categories/delete/${id}`)
         .then((response) => {
           const deletedProductRow = document.getElementById(`cate_${id}`);
           if (deletedProductRow) {

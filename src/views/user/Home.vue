@@ -141,7 +141,7 @@ export default {
   methods: {
     fetchPage(page) {
       axios
-        .get(`https://toytoytoy.onrender.com/productss?page=${page}`)
+        .get(`https://kidtoy.onrender.com/productss?page=${page}`)
         .then((response) => {
           console.log(response);
           this.products = response.data.data;
